@@ -1,6 +1,7 @@
 {
   "name": "hardhat-project",
   "scripts": {
+    "deploy": "npx hardhat deploy",
     "deploy:arbLev2": "npx hardhat deploy --network arbdevLev2",
     "deploy:arbLev1": "npx hardhat deploy --network arbdevLev1",
     "test:arb": "npx hardhat test --network arbdevLev1"

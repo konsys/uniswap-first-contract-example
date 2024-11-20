@@ -26,7 +26,12 @@ const config: HardhatUserConfig = {
       chainId: 1337,
       accounts: [ARBDEV_PRIVATE_KEY],
     }
-  }
+  },
+  namedAccounts: {
+    deployer: {
+      default: 0, // here this will by default take the first account as deployer
+    },
+  },
 };
 
 export default config;
