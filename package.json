@@ -1,15 +1,19 @@
 {
   "name": "hardhat-project",
+  "scripts": {
+    "deploy:arbLev2": "npx hardhat deploy --network arbdevLev2",
+    "deploy:arbLev1": "npx hardhat deploy --network arbdevLev1",
+    "test:arb": "npx hardhat test --network arbdevLev1"
+  },
   "devDependencies": {
-    "@nomiclabs/hardhat-ethers": "^2.0.6",
-    "@nomiclabs/hardhat-waffle": "^2.0.3",
-    "chai": "^4.3.6",
-    "ethereum-waffle": "^3.4.4",
-    "ethers": "^5.6.9",
-    "hardhat": "^2.9.9"
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "hardhat": "^2.22.12"
   },
   "dependencies": {
     "@uniswap/v3-core": "^1.0.1",
-    "@uniswap/v3-periphery": "^1.4.1"
+    "@uniswap/v3-periphery": "^1.4.1",
+    "chai": "^4.3.7",
+    "dotenv": "^16.4.5",
+    "hardhat-deploy": "^0.14.0"
   }
 }
